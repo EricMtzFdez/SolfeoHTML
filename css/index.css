@@ -1,0 +1,34 @@
+*{
+    font-family: Arial;
+}
+
+body{
+    background-image: linear-gradient(#3c6fba, #16ccdd);
+    height: 100vh;
+}
+
+#divTitulo{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 50px;
+
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#divBotones{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    min-height: 300px;
+    min-width: 300px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 80px;
+}
