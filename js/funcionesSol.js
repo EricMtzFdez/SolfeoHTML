@@ -119,14 +119,14 @@ function generarNota() {
 function check() {
     let label = document.getElementById("LbPuntuacion")
 
-    if (document.getElementById("txTexto").value.toLowerCase() == notas[notaActual].nombre) {
+    if (document.getElementById("txRespuesta").value.toLowerCase() == notas[notaActual].nombre) {
         aciertos += 1;
     } else {
         fallos += 1;
     }
 
     label.innerHTML = "Aciertos: " + aciertos + " | Fallos: " + fallos;
-    document.getElementById("txTexto").value = "";
+    document.getElementById("txRespuesta").value = "";
 }
 
 function getRandomInt(min, max) {
@@ -135,22 +135,22 @@ function getRandomInt(min, max) {
 
 //Al pulsar enter en el cuadro de texto
 //https://stackoverflow.com/questions/905222/prevent-form-submission-on-enter-key-press
-const node = document.getElementById("txTexto");
+const node = document.getElementById("txRespuesta");
 node.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
 
         //Código
 
-        if (!document.getElementById("txTexto").value == "") {
+        if (!document.getElementById("txRespuesta").value == "") {
 
-            if (document.getElementById("txTexto").value.toLowerCase() == "do" ||
-                document.getElementById("txTexto").value.toLowerCase() == "re" ||
-                document.getElementById("txTexto").value.toLowerCase() == "mi" ||
-                document.getElementById("txTexto").value.toLowerCase() == "fa" ||
-                document.getElementById("txTexto").value.toLowerCase() == "sol" ||
-                document.getElementById("txTexto").value.toLowerCase() == "la" ||
-                document.getElementById("txTexto").value.toLowerCase() == "si") {
+            if (document.getElementById("txRespuesta").value.toLowerCase() == "do" ||
+                document.getElementById("txRespuesta").value.toLowerCase() == "re" ||
+                document.getElementById("txRespuesta").value.toLowerCase() == "mi" ||
+                document.getElementById("txRespuesta").value.toLowerCase() == "fa" ||
+                document.getElementById("txRespuesta").value.toLowerCase() == "sol" ||
+                document.getElementById("txRespuesta").value.toLowerCase() == "la" ||
+                document.getElementById("txRespuesta").value.toLowerCase() == "si") {
 
                 check();
                 generarNota();

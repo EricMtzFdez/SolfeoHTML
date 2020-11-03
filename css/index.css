@@ -24,11 +24,12 @@ body{
     justify-content: center;
 }
 
-input{
+.btBoton{
     min-height: 300px;
     min-width: 300px;
     margin: 20px;
     font-weight: bold;
     font-size: 30px;
     border-radius: 80px;
+    outline-style: none;
 }
