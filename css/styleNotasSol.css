@@ -101,12 +101,18 @@ input[type=checkbox] {
     align-items: center;
     justify-content: space-around;
 
+    flex: 1;
+
+}
+
+#divFormButton{
+    padding: 5px;
+    width: 100%;
+    flex: 2;
 }
 
 #btFormulario{
-    margin-top: 10px;
-    width: 100%;
-    height: 80px;
-    border-radius: 20px;
+height: 100%;
+width: 100%;
 }
 
