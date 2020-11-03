@@ -84,6 +84,8 @@ input[type=checkbox] {
     box-shadow: 0 0 0 2pt black;
     background-color: white;
     height: 80%;
+    max-width: 140px;
+    min-height: 750px;
     padding: 5px;
 
 
