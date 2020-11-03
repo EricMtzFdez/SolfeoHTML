@@ -8,7 +8,7 @@ body{
 
 header{
     display: flex;
-    background-color: lightblue;
+    background-color: gainsboro;
     border-bottom: black 2px solid;
     padding: 10px;
 }
@@ -74,13 +74,7 @@ img {
     box-shadow: 0 0 0 2pt black;
 }
 
-input {
-    width: 250px;
-    height: 30px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
+
 
 input[type=checkbox] {
     height: 20px;
@@ -119,9 +113,18 @@ input[type=checkbox] {
 }
 
 #divFormButton{
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     flex: 2;
+}
+
+#btAplicar {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    outline-style: none;
 }
 
 #btFormulario{
@@ -132,13 +135,20 @@ width: 100%;
 #divRespuesta{
     height: 40px;
     width: 90%;
+    max-width: 500px;
+
     display: flex;
     justify-content: center;
+
+    margin-bottom: 40px;
 }
 
 #txRespuesta{
     height: auto;
     width: 50%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 
@@ -172,6 +182,10 @@ footer{
     align-items: center;   
 }
 
+.opcion {
+    justify-content: left;
+}
+
 #divFormButton{
     margin: 5px;
     width: 100%;
@@ -194,7 +208,15 @@ input[type=checkbox] {
     height: auto;
 }
 
+#imgHome{
+    height: 40px;
+    width: auto;
+}
 
+#imgGit{
+    height: 20px;
+    width: auto;
+}
 
 }
 
