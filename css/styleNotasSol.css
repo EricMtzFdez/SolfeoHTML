@@ -6,15 +6,16 @@ body {
     display: flex;
     align-items: center;
     background-image: linear-gradient(#3c6fba, #16ccdd);
+    background-attachment: fixed;
     height: 100vh;
 
+    /*Límite de reducción.*/
+    min-width: 350px;
+
 }
 
 
-#DivPuntuacion {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
+
 
 #divPrincipal {
     display: flex;
@@ -23,8 +24,6 @@ body {
 
     flex: 8;
 }
-
-
 
 
 .lbTitulo {
@@ -42,13 +41,18 @@ body {
     font-weight: bold;
 }
 
-#divPuntuacion, #divImg, #divFormulario {
+#divPuntuacion, #divImg, #divFormulario, #divRespuesta {
     margin: 10px;
 }
 
+#divImg{
+    display: flex;
+    justify-content: center;
+}
+
 img {
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: 70%;
     border-radius: 20px;
 
     box-shadow: 0 0 0 2pt black;
@@ -67,15 +71,6 @@ input[type=checkbox] {
     width: 20px;
 }
 
-
-/*#formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    height: 80vh;
-}*/
 
 
 #divFormulario {
@@ -117,14 +112,57 @@ height: 100%;
 width: 100%;
 }
 
+#divRespuesta{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#txRespuesta{
+    height: auto;
+    width: 50%;
+}
+
 
 @media only screen and (max-width:700px){
 
-/*
+
 body{
     flex-direction: column;
 }
-*/
+
+#divFormulario{
+    flex-direction: row;
+    max-width: 90%;
+    min-height: 30%;
+
+    flex-wrap: wrap; /*Con ésto el flex es multilínea.*/
+    align-items: center;   
+}
+
+#divFormButton{
+    margin: 5px;
+    width: 100%;
+    flex: 2;
+}
+
+#divPrincipal{
+    flex: 1;
+}
+
+.lbTitulo {
+    font-size: 30px;
+}
+
+.lbOpcion {
+    font-size: 20px;
+}
+
+input[type=checkbox] {
+    height: auto;
+}
+
+
 
 }
 
