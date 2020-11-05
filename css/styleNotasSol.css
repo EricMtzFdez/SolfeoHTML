@@ -97,42 +97,42 @@ input[type=checkbox] {
     border-radius: 20px;
     box-shadow: 0 0 0 2pt black;
     background-color: white;
-    height: 80%;
-    max-width: 140px;
-    min-height: 750px;
-    padding: 5px;
-    margin-top: 30px;
-
 
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    justify-content: space-between; 
+    align-items: center;
+}
+
+#divOpciones{
+    margin: 5px;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .opcion {
+
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: space-around;
-
-    flex: 1;
-
 }
 
 #divFormButton{
     padding: 10px;
     width: 100%;
     flex: 2;
+    display: flex;
+    justify-content: center;
 }
 
 #btAplicar {
-    height: 100%;
-    width: 100%;
     font-size: 20px;
     text-align: center;
     border-radius: 5px;
     outline-style: none;
+
+    width: 80%;
+    height: 100%;
 }
 
 #btFormulario{
@@ -167,7 +167,6 @@ footer{
     padding: 10px;
     background-color: gainsboro;
     border-top: black 1px solid;
-    height: 24px;
 }
 
 #imgGit{
@@ -183,16 +182,22 @@ footer{
 }
 
 #divFormulario{
-    flex-direction: row;
-    max-width: 90%;
-    min-height: 30%;
+    max-height: 150px;
+}
 
-    flex-wrap: wrap; /*Con ésto el flex es multilínea.*/
-    align-items: center;   
+#divOpciones{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 
 .opcion {
-    justify-content: left;
+  
+}
+
+#divFormButton{
+
 }
 
 #divFormButton{
@@ -223,8 +228,8 @@ input[type=checkbox] {
 }
 
 #imgGit{
-    height: 20px;
     width: auto;
+    height: 40px;
 }
 
 }
