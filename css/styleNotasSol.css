@@ -2,6 +2,12 @@
     font-family: Arial;
 }
 
+#divGlobal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 body{
     margin: 0px;
 }
@@ -11,6 +17,8 @@ header{
     background-color: gainsboro;
     border-bottom: black 2px solid;
     padding: 10px;
+    
+    flex-basis: 100%;
 }
 
 #imgHome{
@@ -27,7 +35,7 @@ header{
     height: 100vh;
 
     /*Límite de reducción.*/
-    min-width: 350px;
+    /*min-width: 350px;*/
 }
 
 
@@ -220,3 +228,8 @@ input[type=checkbox] {
 
 }
 
+@media only screen and (max-width:360px){
+    .lbTitulo {
+        font-size: 25px;
+    }
+}
