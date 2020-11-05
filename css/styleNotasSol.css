@@ -167,6 +167,7 @@ footer{
     padding: 10px;
     background-color: gainsboro;
     border-top: black 1px solid;
+    height: 24px;
 }
 
 #imgGit{
