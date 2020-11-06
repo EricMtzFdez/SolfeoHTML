@@ -179,6 +179,10 @@ footer{
 
 #divGeneral{
     flex-direction: column;
+
+    /*Ésta opción es necesaria para que cuando se abra el teclado
+    de los dispositivos móviles no se desplacen los divs.*/
+    height: 100%; 
 }
 
 #divFormulario{
